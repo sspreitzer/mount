@@ -1,0 +1,7 @@
+# Iterate over instances, combine them with respective definitions
+- name: Manage mount point
+  ansible.posix.mount:
+  args: "{{ (sspreitzer_mount_definitions | combine(sspreitzer_mount_definitions_common, sspreitzer_mount_definitions_extra, recursive=True))[item.key] | combine(item.value, recursive=True) }}"
+  loop: "{{ sspreitzer_mount_instances | combine(sspreitzer_mount_instances_common, sspreitzer_mount_instances_extra, recursive=True) | dict2items }}"
+  loop_control:
+    label: "{{ item.key }}"
