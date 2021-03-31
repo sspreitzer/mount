@@ -4,6 +4,19 @@ galaxy_info:
   description: Ansible role for system configuration to manage mountpoints
   license: MIT
   min_ansible_version: 2.10
+  platforms:
+    - name: Fedora
+      versions:
+        - all
+    - name: EL
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
   galaxy_tags:
     - system
     - mount
