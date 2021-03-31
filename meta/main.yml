@@ -1,0 +1,10 @@
+galaxy_info:
+  role_name: mount
+  author: sspreitzer
+  description: Ansible role for system configuration to manage mountpoints
+  license: MIT
+  min_ansible_version: 2.10
+  galaxy_tags:
+    - system
+    - mount
+    - configuration
