@@ -3,7 +3,7 @@ galaxy_info:
   author: sspreitzer
   description: Ansible role for system configuration to manage mountpoints
   license: MIT
-  min_ansible_version: 2.10
+  min_ansible_version: '2.10'
   platforms:
     - name: Fedora
       versions:
