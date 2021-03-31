@@ -1,6 +1,6 @@
 # Ansible Role: Mount
 
-An Ansible Role that manages mount points on POSIX systems.
+An Ansible Role that manages named mount points on POSIX systems.
 
 ## Requirements
 
